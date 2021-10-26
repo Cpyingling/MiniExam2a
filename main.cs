@@ -6,16 +6,12 @@ using System;
 
 class Program {
   public static double CylinderVolume (double radi,double height) {
-    double v = 1;
-    for (double i = 0; i < height; i++) {
-       v = 3.14 * radi * radi * height;
-    }
-    return v;
+      return 3.14 * radi * radi * height;
   }
 
   public static void Main (string[] args) {
         Console.WriteLine("Enter Height of Cylinder:");
-  double Height = Convert.ToDouble(Console.ReadLine());
+  double Height = Convert.ToDouble(Conso le.ReadLine());
         Console.WriteLine("Enter Radius of Cylinder:");
   double Radius = Convert.ToDouble(Console.ReadLine());
   double v = CylinderVolume(Height,Radius);
